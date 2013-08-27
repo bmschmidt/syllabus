@@ -1,0 +1,8 @@
+test
+
+*.pdf
+*.log
+*.aux
+*.out
+*.bbl
+*.blg
