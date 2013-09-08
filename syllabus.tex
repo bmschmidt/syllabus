@@ -3,12 +3,13 @@
 %Define some variables particular to your course here:
 
 \newcommand{\CourseTitle}{The History of Big Data}
-\newcommand{\CourseNumber}{HIS XXX}
+\newcommand{\CourseNumber}{HONR 1205-3}
 \newcommand{\InstructorName}{Benjamin Schmidt}
 \newcommand{\University}{Northeastern University}
-\newcommand{\Semester}{Fall}
-\newcommand{\Website}{{http://bigdata.benschmidt.org}}
-
+\newcommand{\Semester}{Fall 2013}
+\newcommand{\Email}{b.schmidt@neu.edu}
+\newcommand{\OfficeHours}{Meserve Hall 219\\
+Tuesdays 3-5 pm, or by appointment}
 
 \usepackage[english]{babel}
 \usepackage{fontspec}
@@ -29,7 +30,7 @@
 % instead use pdflatex with package mathpazo.
 
 \setmainfont[Ligatures=TeX,Numbers=OldStyle,%
-    BoldFont={* Black}]{Hoefler Text}%Garamond Premier Pro}
+    BoldFont={* Bold}]{Minion Pro}%Garamond Premier Pro}
 
 \usepackage{xunicode}
 \usepackage{xltxtra} 
@@ -100,7 +101,9 @@
 \begin{flushleft}
 \textbf{\CourseTitle{} \\
 Professor \InstructorName} \\
-\url{\Website{}}
+%\url{\Website} \\
+Email: \Email \\
+Office Hours: \OfficeHours
 \end{flushleft}
 
 
@@ -114,11 +117,12 @@ Professor \InstructorName} \\
 \nocite{*}
 
 % But skip any with keyword ``supplemental''
-\printbibliography[notkeyword=supplemental,title=Readings]
+\printbibliography[notkeyword=supplemental,title=Full Citations for Readings]
 
 \vfill
 \footnotesize
-\input{input/ack.tex}
+%\input{input/ack.tex}
+\input{input/gradingGuidelines.tex}
 
 \end{document}
 

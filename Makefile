@@ -72,7 +72,7 @@ syllabus.html: syllabus-4ht.html html_clean
 
 #I like to keep my bibliography in Zotero. This will dump the entire Zotero library into a bib file.
 course.bib:
-	perl zoteroImport/getBibTexFromZotero.pl > course.bib
+	perl zoteroImport/getBibTexFromZotero.pl | sed "s/urldate.*//g" > course.bib
 
 
 clean:
@@ -84,7 +84,7 @@ clean:
 	# hyperref
 	rm -f *.out 
 	# biber
-	rm -f *.bbl *.bcf *.blg *.run.xml
+	#rm -f *.bbl *.bcf *.blg *.run.xml
 	# tex4ht
 	rm -f *.4ct *.4tc *.dvi *.idv *.lg *.tmp *.xref
 	# ghc
@@ -99,6 +99,9 @@ clean_outputs:
 	rm -f syllabus.pdf syllabus.html html_clean
 
 reallyclean: clean clean_outputs
+
+superclean: clean clean_outputs
+	rm course.bib
 
 # Edit this target for automated uploads
 publish: syllabus.html
