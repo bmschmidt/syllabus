@@ -16,7 +16,14 @@ use MozRepl;
 # temporary file to store bibliography
 (undef,my $filename) = tempfile();
 
-my $collectionKey = "3G43MVHQ";
+my $keylimitation = "";
+
+if (@ARGV==1){
+    #Can be (but need not be) passed the id of a Zotero collection to export.
+    #The easiest way to find these is to look at the url of the webpage.
+    my $collectionKey = $ARGV[0];
+    $keylimitation = q|.setCollection(Zotero.Collections.getByKey('| . $collectionKey . q|'))|;
+}
 
 my $repl = MozRepl->new;
 # Make it quiet
@@ -32,10 +39,11 @@ file.initWithPath(filename);
 var zotero = Components.classes['@zotero.org/Zotero;1'].getService(Components.interfaces.nsISupports).wrappedJSObject;
 var translatorObj = new Zotero.Translate('export');
 translatorObj.setLocation(file);
-//I (Ben Schmidt) changed this to use my biblatex-chicago exporter instead.
+//I (Ben Schmidt) changed this to use my biblatex-chicago exporter instead; switch back
+//for normal biblatex
 //translatorObj.setTranslator('9cb70025-a888-4a29-a210-93ec52da40d4');
 translatorObj.setTranslator('ba905f1a-436b-4b6d-a816-ba0b4ac4c9ad');
-translatorObj.setCollection(Zotero.Collections.getByKey('| . $collectionKey . q|'));
+translatorObj| . $keylimitation . q|;
 translatorObj.translate();|;
 
 $repl->execute($executestring);

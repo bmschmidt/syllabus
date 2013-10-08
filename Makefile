@@ -16,13 +16,14 @@ NON_SYLLABUS_FILES := README.md
 # 1. use pandoc's ability to read and write its syntax tree in JSON
 # 2. rewrite the cleaner script in something friendlier, like Perl
 # 3. generate pull request
+
 html_clean: html_clean.hs
 	ghc --make $<
 
 mds := $(wildcard *.md)
 mds := $(filter-out $(NON_SYLLABUS_FILES),$(mds))
 
-input_dir := input
+input_dir := .
 texs := $(patsubst %.md,$(input_dir)/%.tex,$(mds))
 
 $(texs): $(input_dir)/%.tex: %.md
@@ -33,10 +34,14 @@ vc:
 	./vc
 
 # also, in order to ensure ./vc script is run, dependency on phony vc target
-syllabus.pdf: syllabus.tex $(texs) course.bib vc
+syllabus.pdf: syllabus.tex configuration.tex $(texs) course.bib vc
 	xelatex $<
 	biber $(basename $<)
 	xelatex $<
+
+#A set of macros particular to this course: instructor, title, etc.
+configuration.tex: ../course.cnf
+	grep "=" ../course.cnf | perl -pe 's/(.*[^ ]) *= *(.*)/\\newcommand{\\$$1}{$$2}/' > configuration.tex
 
 4ht_src := 4ht
 4ht_texs := $(patsubst $(input_dir)/%.tex,$(4ht_src)/%.tex,$(texs))
@@ -70,10 +75,12 @@ syllabus-4ht.html: syllabus-4ht.pdf syllabus-4ht.cfg
 syllabus.html: syllabus-4ht.html html_clean
 	./html_clean < $< > $@
 
-#I like to keep my bibliography in Zotero. This will dump the entire Zotero library into a bib file.
-course.bib:
-	perl zoteroImport/getBibTexFromZotero.pl | sed "s/urldate.*//g" > course.bib
+#I (BMS) like to keep my bibliography in Zotero. This will dump the entire Zotero library into a bib file.
+#Uses a pre-defined library code (or just dumps out the entire Zotero library if none is listed in the course.cnf file);
+#Just create  course.bib file normally if you don't want to use zotero, and never run make bibclean
 
+course.bib: 
+	perl zoteroImport/getBibTexFromZotero.pl $$(grep ZoteroLibrary ../course.cnf | perl -pe 's/.*= ?//') | sed "s/urldate.*//g" > course.bib
 
 clean:
 	rm -f *.aux *.log
@@ -100,8 +107,10 @@ clean_outputs:
 
 reallyclean: clean clean_outputs
 
-superclean: clean clean_outputs
+bibclean: clean clean_outputs
 	rm course.bib
+
+
 
 # Edit this target for automated uploads
 publish: syllabus.html

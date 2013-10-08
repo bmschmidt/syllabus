@@ -13,7 +13,7 @@ Both posts and responses will be included as part of your participation grade.
 
 #### Papers
 
-You will write one 5 to 7 page papers for this class, based on the readings; no outside research is expected.
+You will write one 5 to 7 page paper for this class, based on the readings; no outside research is expected.
 
 #### Archival Project
 

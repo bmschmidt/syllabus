@@ -1,16 +1,8 @@
 \documentclass[12pt,twoside]{article}
 
-%Define some variables particular to your course here:
+%All course-specific variables are defined in a .cnf file for the course.
 
-\newcommand{\CourseTitle}{The History of Big Data}
-\newcommand{\CourseNumber}{HONR 1205-3}
-\newcommand{\InstructorName}{Benjamin Schmidt}
-\newcommand{\University}{Northeastern University}
-\newcommand{\Semester}{Fall 2013}
-\newcommand{\Email}{b.schmidt@neu.edu}
-\newcommand{\OfficeHours}{Meserve Hall 219\\
-Tuesdays 3-5 pm, or by appointment}
-
+\input{configuration.tex}
 \usepackage[english]{babel}
 \usepackage{fontspec}
 
@@ -30,7 +22,7 @@ Tuesdays 3-5 pm, or by appointment}
 % instead use pdflatex with package mathpazo.
 
 \setmainfont[Ligatures=TeX,Numbers=OldStyle,%
-    BoldFont={* Bold}]{Minion Pro}%Garamond Premier Pro}
+    BoldFont={* Bold}]{Minion Pro}
 
 \usepackage{xunicode}
 \usepackage{xltxtra} 
@@ -67,7 +59,7 @@ Tuesdays 3-5 pm, or by appointment}
 \renewcommand{\headrulewidth}{0 pt}
 \fancyhead{}
 \fancyhead[LO]{\small \CourseNumber{}}
-\fancyhead[CO]{\small \University{}}
+\fancyhead[CO]{\small \Institution{}}
 \fancyhead[RO]{\small \Semester{}}
 \fancyfoot{}
 \cfoot{\small \thepage}
