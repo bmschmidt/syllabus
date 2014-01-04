@@ -23,7 +23,7 @@ html_clean: html_clean.hs
 mds := $(wildcard *.md)
 mds := $(filter-out $(NON_SYLLABUS_FILES),$(mds))
 
-input_dir := .
+input_dir := input
 texs := $(patsubst %.md,$(input_dir)/%.tex,$(mds))
 
 $(texs): $(input_dir)/%.tex: %.md
@@ -40,6 +40,7 @@ syllabus.pdf: syllabus.tex configuration.tex $(texs) course.bib vc
 	xelatex $<
 
 #A set of macros particular to this course: instructor, title, etc.
+#Just being hackily retrieved from a .cnf file with regexes.
 configuration.tex: ../course.cnf
 	grep "=" ../course.cnf | perl -pe 's/(.*[^ ]) *= *(.*)/\\newcommand{\\$$1}{$$2}/' > configuration.tex
 
@@ -69,7 +70,7 @@ syllabus-4ht.pdf: syllabus-4ht.tex $(4ht_texs) course.bib
 	biber $(basename $<)
 
 syllabus-4ht.html: syllabus-4ht.pdf syllabus-4ht.cfg
-	htlatex syllabus-4ht.tex syllabus-4ht.cfg " -cunihtf -utf8" "-cvalidate"
+	htlatex syllabus-4ht.tex syllabus-4ht.cfg "html,uni-html4" "-cmozhtf"
 
 # syllabus.html is the cleaned-up version
 syllabus.html: syllabus-4ht.html html_clean
@@ -103,7 +104,7 @@ clean:
 
 clean_outputs:
 	# final outputs
-	rm -f syllabus.pdf syllabus.html html_clean
+	rm -f syllabus.pdf syllabus.html html_clean input/*.tex
 
 reallyclean: clean clean_outputs
 

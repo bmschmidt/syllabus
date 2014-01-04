@@ -4,7 +4,7 @@
 
 * Frederick Taylor, *The Principles of Scientific Management*
 * Sarah Igo, *The Averaged American*
-* Nicholas Lehman, *The Big Test*
+* Nicholas Lemann, *The Big Test*
 * Tracy Kidder, *The Soul of a New Machine*
 * Tim Berners-Lee, *Weaving the Web*
 
@@ -12,117 +12,159 @@ All other readings will be made available through Blackboard.
 
 In addition to the readings listed below, some short primary sources may be added to Blackboard as the course develops to accompany a week's readings.
 
-## Week 1: Introductions
+## Week 1: Introductions ##
 
+## Week 2: Early Modern Information Overload ##
 
+### September 9 ###
 
-## September 9 and 12: Early Modern Information Overload
+* \cite{blair_reading_2003}
+* (In class): Plato, *Phaedrus*, on the invention of writing.
 
-* **September 9**: \cite{blair_reading_2003}
-* \cite{plato}
+### September 12 ###
 
-* **September 12**: \cite{muller-wille_natural_2012}
+* \cite{muller-wille_natural_2012}
 
-## September 16 and 19: Ordering the World
+## Week 3: Ordering the World
 
-* **September 16** \cite{borges_analytical_1999}
+### September 16 ###
+
+* \cite{borges_analytical_1999}
 * \cite[Introduction and Chapter 3]{foucault_order_1994}
 
+### September 19 ###
 
-## September 23 and 26: Counting and Business in the 19th Century
+* Try the Foucault again
+* In class: \cite{playfair_commercial_2005}
 
-* **September 23:** \cite{edwards_early_1960}	 
+## Week 4: 19th Century Records
 
+### September 23: Accounting ###
 
-* **September 26:** \cite{garvey_facts_2013}
+* \cite{edwards_early_1960}	 
+* In class: Double-entry bookkeeping.
+
+### September 26: Slave economies ###
+
+* \cite{garvey_facts_2013}
 * \cite[pp. 192-209,233-258]{fogel_time_1989}
 * \cite["GW Hammond, Instructions to his Overseer"]{wilentz_major_1992}
+* In class: *American Slavery as it is*, runaway slave advertisements.
 
-## September 30 - October 3: Managed Information in the late nineteenth century
+## Week 5: Managed Information in the late nineteenth century
 
-* **September 30:** \cite[Chapter 6, "Industrial Revolution and the Crisis of Control"]{beniger_control_1986}
+### September 30: Industrial Revolutions
+
+* \cite[Chapter 6, "Industrial Revolution and the Crisis of Control"]{beniger_control_1986}
+* In Class: Dun and Bradstreet. \cite{t._mercantile_1851}, \cite{j._mercantile_1851}
+
+### October 3: The Census ###
 
 * \cite{kinnahan_charting_2008}
 * \cite[Chapters 3 to 5]{anderson_american_1988}
+* In Class: Blank Census forms, 1790-1940; and completed forms for Greenleaf St., Boston, 1940 Census.
 
-**First Paper Assignments handed out October 3.**
+### First Paper Assignments handed out October 3. ###
 
-## October 7 and 10: Sciences of Management
+## Week 6: Sciences of Management ##
 
-* **October 7:** \cite{taylor_principles_2006}
+### October 7: Taylorism ###
 
-* **October 10** \cite[Chapters 5 and 6]{meyer_five_1981}
+* \cite{taylor_principles_2006}
+* In class: punchcards and sorting.
 
-## October 17: Technocracy
+### October 10: Fordism ###
+* \cite[Chapters 5 and 6]{meyer_five_1981}
+* In class: \cite[First fifteen minutes]{chaplin_modern_1936}
+
+## Weeks 7 and 8: A Culture of Data ##
 
 (No class October 14/Columbus Day)
 
-**Short Papers Due Wed. October 16 at noon over Blackboard**
+**First Papers Due Wed. October 16 at noon over Blackboard**
 
-* Parrish, Wayne. "What is Technocracy?" New Outlook 161 (Nov 1932): 13-18.
-* Scott, Howard. "Technocracy Speaks." Living Age 343 (Dec 1932): 297-303.
-
-* MacLeish, Archibald. "Machines and the Future." The Nation 136 (8 Feb 1933): 140-142.
-* Jordan, Virgil. "Technocracy - Tempest on a Slide Rule." Scribner's Magazine 93 (Feb 1933): 65-69.
-
-## October 21 and 24: A culture of data
-
-**Data exploration Assignments handed out: Due October 31**
-
-* \cite[Chapters 5 and 6]{igo_averaged_2007}
+### October 17: Meritocracy ###
 
 * \cite[pp. 1-173]{lemann_big_1999}
+* In class: \cite[Book III, 412b-415c]{plato_republic_1968}
 
-* \cite[pp 193-229]{ohmer_george_2006}
+## Week 8: A culture of data: Part II ##
 
-## October 28 and 31: The Computer enters the scene.
+### October 21: Quantified Selves ###
 
+* \cite[Introduction, Chapters 5 and 6, and Epilogue]{igo_averaged_2007}
+* In class: \cite[157-159]{foucault_history_1978}
+
+### October 24: Archival Trip ###
+
+* Meet in University Archives for backstage tour and to see sample holdings.
+
+## Week 9: Early Computers
+
+### October 28: Imagining Computers ###
 * \cite{bush_as_1945}
 * \cite{bush_memex_1991}
-* \cite{lubar_not_1992}
 
-* Cosmpolitan, "The Computer Girls," 1967
-* \cite[Chapter TBD]{ensmenger_computer_2010}
+### October 31: Gender and Computing ###
+
+* *Cosmpolitan,* "The Computer Girls," 1967
 * \cite{light_when_1999}
+* Film selections in class: \cite{lang_desk_1957}
 
-Film selections: "The Desk Set"
+## Week 10: Computers in the Mainstream
 
-## November 4 and 7: Computers in the Mainstream
+### November 4: The Mainframe Age
+* \cite[34-69,254-274]{miller_assault_1971}
 
-**Final Project Discussion**
-
-* \cite[Selections]{miller_assault_1971}
+### November 7: Computer Workers
 * \cite{kidder_soul_1981}
 
-## November 14: Personal Computers and the Web
+## Week 11: Personal Computing ##
 
 (No class November 11/Veterans' Day)
 
-* Stewart Brand (ed.) *The Whole Earth Catalog* (selections)
-* Ted M. Lau, "Total Kitchen Information System", 1977
+**Data Exploration papers due November 13.**
+
+### November 14: Personal computing ###
+
+* Ted M. Lau, "Total Kitchen Information System", *Byte Magazine*, 1977
 * \cite[Introduction; Chapters 1, 2, and 3]{berners-lee_weaving_1999}
 
 
-## November 18 and 21: The Data Deluge and the Age of Google
+## Week 12: The Age of Google ##
 
-* \cite["After the Deluge"]{gleick:_information_2011}
-* The End of Theory, Wired Magazine (Read the Introduction and pick two fields you are interested in to discuss in class)
+### November 18: Information Overload revisited ###
 
+* \cite[ "After the Deluge"]{gleick_information:_2011}
 * \cite[Chapter 2]{vaidhyanathan_googlization_2011}
-* [Noam Chomsky on Machine Learning, and Peter Norvig on Noam Chomsky](http://norvig.com/chomsky.html)
 
-## November 25: December Surveillance and the state
+### November 21: The emergence of "Big Data" ###
 
-**Final Project brief description submission deadline**
+* The End of Theory, Wired Magazine, 2010 (Read the Introduction and pick two fields you are interested in to discuss in class)
+* [The Norvig-Chomsky Debate](http://norvig.com/chomsky.html)
+
+## Week 13: Surveillance and the state ##
+
+### November 25 ###
+
+
+* \cite{macaskill_nsa_2013}
+* \cite{gellman_nsa_2013}
+* \cite{doctorow_lockdown:_2012}
 
 (No class November 28/Thanksgiving)
 
-* \cite[Networked Authoritarianism]{mackinnon_consent_2012}
-* NSA Prism documents
+## Week 14: Wrapup ##
+
+### December 4: Reflections ###
+
 * [Watch Edward Snowden's interview with Glenn Greenwald](http://www.youtube.com/watch?v=5yB3n9fu-rM)
-* [Listen to "Photo Op," *This American Life* Episode 493](http://www.thisamericanlife.org/radio-archives/episode/493/picture-show?act=1)
-* Cory Doctorow, ["Lockdown: The Coming War on General-Purpose Computing"](http://boingboing.net/2012/01/10/lockdown.html)
+* (In class) \cite[ "Panopticism," pp. 200-204]{foucault_discipline_1977}
 
-## December 4: TBD/Catchup.
+### Optional Reading for catchup discussion posts ###
 
-**Final Projects Due December 5**
+* (Optional catchup blackboard posts after class) [Listen to "Photo Op," *This American Life* Episode 493](http://www.thisamericanlife.org/radio-archives/episode/493/picture-show?act=1)
+
+
+
+## Final Projects Due December 10

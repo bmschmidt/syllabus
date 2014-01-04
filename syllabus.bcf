@@ -295,33 +295,39 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey>blair_reading_2003</bcf:citekey>
-    <bcf:citekey>plato</bcf:citekey>
     <bcf:citekey>muller-wille_natural_2012</bcf:citekey>
     <bcf:citekey>borges_analytical_1999</bcf:citekey>
     <bcf:citekey>foucault_order_1994</bcf:citekey>
+    <bcf:citekey>playfair_commercial_2005</bcf:citekey>
     <bcf:citekey>edwards_early_1960</bcf:citekey>
     <bcf:citekey>garvey_facts_2013</bcf:citekey>
     <bcf:citekey>fogel_time_1989</bcf:citekey>
     <bcf:citekey>wilentz_major_1992</bcf:citekey>
     <bcf:citekey>beniger_control_1986</bcf:citekey>
+    <bcf:citekey>t._mercantile_1851</bcf:citekey>
+    <bcf:citekey>j._mercantile_1851</bcf:citekey>
     <bcf:citekey>kinnahan_charting_2008</bcf:citekey>
     <bcf:citekey>anderson_american_1988</bcf:citekey>
     <bcf:citekey>taylor_principles_2006</bcf:citekey>
     <bcf:citekey>meyer_five_1981</bcf:citekey>
-    <bcf:citekey>igo_averaged_2007</bcf:citekey>
+    <bcf:citekey>chaplin_modern_1936</bcf:citekey>
     <bcf:citekey>lemann_big_1999</bcf:citekey>
-    <bcf:citekey>ohmer_george_2006</bcf:citekey>
+    <bcf:citekey>plato_republic_1968</bcf:citekey>
+    <bcf:citekey>igo_averaged_2007</bcf:citekey>
+    <bcf:citekey>foucault_history_1978</bcf:citekey>
     <bcf:citekey>bush_as_1945</bcf:citekey>
     <bcf:citekey>bush_memex_1991</bcf:citekey>
-    <bcf:citekey>lubar_not_1992</bcf:citekey>
-    <bcf:citekey>ensmenger_computer_2010</bcf:citekey>
     <bcf:citekey>light_when_1999</bcf:citekey>
+    <bcf:citekey>lang_desk_1957</bcf:citekey>
     <bcf:citekey>miller_assault_1971</bcf:citekey>
     <bcf:citekey>kidder_soul_1981</bcf:citekey>
     <bcf:citekey>berners-lee_weaving_1999</bcf:citekey>
-    <bcf:citekey>gleick:_information_2011</bcf:citekey>
+    <bcf:citekey>gleick_information:_2011</bcf:citekey>
     <bcf:citekey>vaidhyanathan_googlization_2011</bcf:citekey>
-    <bcf:citekey>mackinnon_consent_2012</bcf:citekey>
+    <bcf:citekey>macaskill_nsa_2013</bcf:citekey>
+    <bcf:citekey>gellman_nsa_2013</bcf:citekey>
+    <bcf:citekey>doctorow_lockdown:_2012</bcf:citekey>
+    <bcf:citekey>foucault_discipline_1977</bcf:citekey>
     <bcf:citekey>*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

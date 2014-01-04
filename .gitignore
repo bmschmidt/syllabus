@@ -5,4 +5,7 @@ test
 *.aux
 *.out
 *.bbl
+*.blg*.bcf
+syllabus-4ht*
 *.blg
+*.tex
