@@ -1,5 +1,12 @@
 # A syllabus framework for PDF and HTML
 
+## Credits:
+
+This is almost all Andrew Goldstone's stuff: I forked because it was intertwined with all his other latex files, and I (Ben) wanted to intertwine it with all *my* files.
+His original distro is [here](https://github.com/agoldst/tex).
+In addition to file locations, my changes involve letting you store your bibliography in a Zotero library instead of as .bib files and some associated scripts.
+
+
 ## The goal
 
 The goal is to generate a printable PDF and an HTML syllabus from the same set of files. The PDF has to look nice and it has to have a generated bibliography; the HTML has to be clean and simple in order to support good CSS styling in whatever website setup I am working with.
