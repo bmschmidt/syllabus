@@ -40,9 +40,10 @@ syllabus.pdf: syllabus.tex configuration.tex $(texs) course.bib vc
 	xelatex $<
 
 #A set of macros particular to this course: instructor, title, etc.
+#Prevents mucking about in the template files.
 #Just being hackily retrieved from a .cnf file with regexes.
-configuration.tex: ../course.cnf
-	grep "=" ../course.cnf | perl -pe 's/(.*[^ ]) *= *(.*)/\\newcommand{\\$$1}{$$2}/' > configuration.tex
+configuration.tex: course.cnf
+	grep "=" course.cnf | perl -pe 's/(.*[^ ]) *= *(.*)/\\newcommand{\\$$1}{$$2}/' > configuration.tex
 
 4ht_src := 4ht
 4ht_texs := $(patsubst $(input_dir)/%.tex,$(4ht_src)/%.tex,$(texs))
@@ -78,7 +79,7 @@ syllabus.html: syllabus-4ht.html html_clean
 
 #I (BMS) like to keep my bibliography in Zotero. This will dump the entire Zotero library into a bib file.
 #Uses a pre-defined library code (or just dumps out the entire Zotero library if none is listed in the course.cnf file);
-#Just create  course.bib file normally if you don't want to use zotero, and never run make bibclean
+#Just create course.bib file normally if you don't want to use zotero, and never run make bibclean
 
 course.bib: 
 	perl zoteroImport/getBibTexFromZotero.pl $$(grep ZoteroLibrary ../course.cnf | perl -pe 's/.*= ?//') | sed "s/urldate.*//g" > course.bib

@@ -8,5 +8,10 @@ test
 *.blg*.bcf
 syllabus-4ht*
 *.blg
-*.tex
 *~
+*.xml
+configuration.tex
+configuration.tex syllabus-4ht.tex syllabus.tex vc.tex
+syllabus.bcf
+syllabus.run.xml
+input
